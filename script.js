@@ -92,33 +92,41 @@ five.addEventListener("click", () => {
 });
 
 submit.addEventListener("click", () => {
-  switch (stars) {
-    case 1:
-      starAmount.textContent = "You selected 1 out of 5";
-      thankYou.style.display = "flex";
-      ratingForm.style.display = "none";
-      break;
-    case 2:
-      starAmount.textContent = "You selected 2 out of 5";
-      thankYou.style.display = "flex";
-      ratingForm.style.display = "none";
-      break;
-    case 3:
-      starAmount.textContent = "You selected 3 out of 5";
-      thankYou.style.display = "flex";
-      ratingForm.style.display = "none";
-      break;
-    case 4:
-      starAmount.textContent = "You selected 4 out of 5";
-      thankYou.style.display = "flex";
-      ratingForm.style.display = "none";
-      break;
-    case 5:
-      starAmount.textContent = "You selected 5 out of 5";
-      thankYou.style.display = "flex";
-      ratingForm.style.display = "none";
-      break;
-    default:
-      alert("Please select a rating");
+  // switch (stars) {
+  //   case 1:
+  //     starAmount.textContent = "You selected 1 out of 5";
+  //     thankYou.style.display = "flex";
+  //     ratingForm.style.display = "none";
+  //     break;
+  //   case 2:
+  //     starAmount.textContent = "You selected 2 out of 5";
+  //     thankYou.style.display = "flex";
+  //     ratingForm.style.display = "none";
+  //     break;
+  //   case 3:
+  //     starAmount.textContent = "You selected 3 out of 5";
+  //     thankYou.style.display = "flex";
+  //     ratingForm.style.display = "none";
+  //     break;
+  //   case 4:
+  //     starAmount.textContent = "You selected 4 out of 5";
+  //     thankYou.style.display = "flex";
+  //     ratingForm.style.display = "none";
+  //     break;
+  //   case 5:
+  //     starAmount.textContent = "You selected 5 out of 5";
+  //     thankYou.style.display = "flex";
+  //     ratingForm.style.display = "none";
+  //     break;
+  //   default:
+  //     alert("Please select a rating");
+  // }
+
+  if (stars == 0) {
+    alert("Please select a rating");
+  } else {
+    starAmount.textContent = "You selected " + stars + " out of 5";
+    thankYou.style.display = "flex";
+    ratingForm.style.display = "none";
   }
 });
