@@ -151,7 +151,6 @@ main {
 }
 
 .attribution {
-  background: linear-gradient(to top, var(--Dark-Blue), transparent);
   width: 100%;
   color: var(--Light-Grey);
   font-size: 15px;
